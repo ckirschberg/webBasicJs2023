@@ -1,7 +1,23 @@
 import { Person } from './Person.js';
 
 let person1 = new Person('Mikkel', 'Jacobsen');
+let person3 = new Person('Amad', 'Kazmi');
+
+let people = [person1, person3];
+console.log(people);
+
+let firstname = people[0].firstname;
+console.log("I retrieved the first persons firstname and it is: " + firstname);
+
 console.log(person1.email);
+
+
+
+let numbers = [3, 2, 5, 8, 12, 38]
+numbers.push(43);
+console.log(numbers);
+
+
 
 let myName = "Anna";
 myName = 2;
