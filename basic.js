@@ -1,3 +1,8 @@
+import { Person } from './Person.js';
+
+let person1 = new Person('Mikkel', 'Jacobsen');
+console.log(person1.email);
+
 let myName = "Anna";
 myName = 2;
 let isHappy = true;
@@ -28,6 +33,28 @@ let person = {
         return this.firstname + " " + this.lastname;
     }
   }
+
+
+  function areaRectangle(width, height) {
+    return width*height;
+  }
+
+  function distance(speed, time) {
+    return speed * time;
+  }
+
+  console.log("distance " + distance(50, 10));
+
+let calculator = {
+    owner: 'Paul',
+    distance: function(speed, time) {
+        return speed * time;
+    },
+    areaRectangle: areaRectangle
+}
+
+
+console.log("Calculator", calculator.areaRectangle(5,10));
 
 person.age = 44;
 
